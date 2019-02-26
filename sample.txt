@@ -1,0 +1,306 @@
+
+Amrit Raj@Amrit MINGW64 /
+$ cd desktop
+bash: cd: desktop: No such file or directory
+
+Amrit Raj@Amrit MINGW64 /
+$ cd Desktop
+bash: cd: Desktop: No such file or directory
+
+Amrit Raj@Amrit MINGW64 /
+$ desktop
+bash: desktop: command not found
+
+Amrit Raj@Amrit MINGW64 /
+$ cd ..
+
+Amrit Raj@Amrit MINGW64 /
+$ cd
+
+Amrit Raj@Amrit MINGW64 ~ (master)
+$ cd ..
+
+Amrit Raj@Amrit MINGW64 /c/Users
+$ cd desktop
+bash: cd: desktop: No such file or directory
+
+Amrit Raj@Amrit MINGW64 /c/Users
+$ cd ..
+
+Amrit Raj@Amrit MINGW64 /c
+$ cd ..
+
+Amrit Raj@Amrit MINGW64 /
+$ cd ..
+
+Amrit Raj@Amrit MINGW64 /
+$ Desktop
+bash: Desktop: command not found
+
+Amrit Raj@Amrit MINGW64 /
+$ cd test
+bash: cd: test: No such file or directory
+
+Amrit Raj@Amrit MINGW64 /
+$ Desktop:
+bash: Desktop:: command not found
+
+Amrit Raj@Amrit MINGW64 /
+$ E:
+bash: E:: command not found
+
+Amrit Raj@Amrit MINGW64 /
+$ cd e
+
+Amrit Raj@Amrit MINGW64 /e
+$ mkdir test
+
+Amrit Raj@Amrit MINGW64 /e
+$ open test
+bash: open: command not found
+
+Amrit Raj@Amrit MINGW64 /e
+$ touch index.html
+
+Amrit Raj@Amrit MINGW64 /e
+$ cd test
+
+Amrit Raj@Amrit MINGW64 /e/test
+$ touch index.html
+
+Amrit Raj@Amrit MINGW64 /e/test
+$ git init
+Initialized empty Git repository in E:/test/.git/
+
+Amrit Raj@Amrit MINGW64 /e/test (master)
+$ git config --global user.name 'Amrit Raj'
+
+Amrit Raj@Amrit MINGW64 /e/test (master)
+$ git config --global user.email 'rajamrit.18@gmail.com'
+
+Amrit Raj@Amrit MINGW64 /e/test (master)
+$ git add index.html
+
+Amrit Raj@Amrit MINGW64 /e/test (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   index.html
+
+
+Amrit Raj@Amrit MINGW64 /e/test (master)
+$ git commit -m 'commit'
+[master (root-commit) 0aec3e4] commit
+ 1 file changed, 9 insertions(+)
+ create mode 100644 index.html
+
+Amrit Raj@Amrit MINGW64 /e/test (master)
+$ touch .gitignore
+
+Amrit Raj@Amrit MINGW64 /e/test (master)
+$ touch log.txt
+
+Amrit Raj@Amrit MINGW64 /e/test (master)
+$ git add .
+
+Amrit Raj@Amrit MINGW64 /e/test (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   .gitignore
+
+
+Amrit Raj@Amrit MINGW64 /e/test (master)
+$ git branch login
+
+Amrit Raj@Amrit MINGW64 /e/test (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   .gitignore
+
+
+Amrit Raj@Amrit MINGW64 /e/test (master)
+$ git commit -m 'other commit'
+[master a60a6dd] other commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 .gitignore
+
+Amrit Raj@Amrit MINGW64 /e/test (master)
+$ git checkout login
+Switched to branch 'login'
+
+Amrit Raj@Amrit MINGW64 /e/test (login)
+$ touch login.html
+
+Amrit Raj@Amrit MINGW64 /e/test (login)
+$ git add .
+
+Amrit Raj@Amrit MINGW64 /e/test (login)
+$ git commit -m 'login form'
+[login 016d955] login form
+ 3 files changed, 11 insertions(+)
+ create mode 100644 log.txt
+ create mode 100644 login.html
+
+Amrit Raj@Amrit MINGW64 /e/test (login)
+$ git checkout master
+Switched to branch 'master'
+
+Amrit Raj@Amrit MINGW64 /e/test (master)
+$ git merge login
+Merge made by the 'recursive' strategy.
+ index.html | 1 +
+ log.txt    | 1 +
+ login.html | 9 +++++++++
+ 3 files changed, 11 insertions(+)
+ create mode 100644 log.txt
+ create mode 100644 login.html
+
+Amrit Raj@Amrit MINGW64 /e/test (master)
+$ git remote add origin https://github.com/Nectar123/Sample.git
+
+Amrit Raj@Amrit MINGW64 /e/test (master)
+$ git remote
+origin
+
+Amrit Raj@Amrit MINGW64 /e/test (master)
+$ git push -u origin master
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (13/13), 1.10 KiB | 376.00 KiB/s, done.
+Total 13 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), done.
+To https://github.com/Nectar123/Sample.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+Amrit Raj@Amrit MINGW64 /e/test (master)
+$ touch readme.md
+
+Amrit Raj@Amrit MINGW64 /e/test (master)
+$ git commit -m 'added readme'
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+        readme.md
+
+nothing added to commit but untracked files present
+
+Amrit Raj@Amrit MINGW64 /e/test (master)
+$ git add .
+
+Amrit Raj@Amrit MINGW64 /e/test (master)
+$ git commit -m 'added readme'
+[master 63b0151] added readme
+ 1 file changed, 2 insertions(+)
+ create mode 100644 readme.md
+
+Amrit Raj@Amrit MINGW64 /e/test (master)
+$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Amrit Raj@Amrit MINGW64 /e/test (master)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 287 bytes | 287.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Nectar123/Sample.git
+   6292ea2..63b0151  master -> master
+
+Amrit Raj@Amrit MINGW64 /e/test (master)
+$ git pull
+Already up to date.
+
+Amrit Raj@Amrit MINGW64 /e/test (master)
+$ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/Nectar123/Sample
+   63b0151..7eb30a9  master     -> origin/master
+Updating 63b0151..7eb30a9
+Fast-forward
+ login.html | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+Amrit Raj@Amrit MINGW64 /e/test (master)
+$ cd ..
+
+Amrit Raj@Amrit MINGW64 /e
+$ mkdir sample
+
+Amrit Raj@Amrit MINGW64 /e
+$ touch index.html
+
+Amrit Raj@Amrit MINGW64 /e
+$ cd sample
+
+Amrit Raj@Amrit MINGW64 /e/sample
+$ touch index.html
+
+Amrit Raj@Amrit MINGW64 /e/sample
+$ git init
+Initialized empty Git repository in E:/sample/.git/
+
+Amrit Raj@Amrit MINGW64 /e/sample (master)
+$ git add .
+
+Amrit Raj@Amrit MINGW64 /e/sample (master)
+$ git commit -m '1st commit'
+[master (root-commit) 7fcdb8c] 1st commit
+ 1 file changed, 9 insertions(+)
+ create mode 100644 index.html
+
+Amrit Raj@Amrit MINGW64 /e/sample (master)
+$ git remote add origin https://github.com/sample-code/test.git
+
+Amrit Raj@Amrit MINGW64 /e/sample (master)
+$ git remote
+origin
+
+Amrit Raj@Amrit MINGW64 /e/sample (master)
+$ git add .
+
+Amrit Raj@Amrit MINGW64 /e/sample (master)
+$ git commit -m '1st commit'
+On branch master
+nothing to commit, working tree clean
+
+Amrit Raj@Amrit MINGW64 /e/sample (master)
+$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 277 bytes | 92.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/sample-code/test.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+Amrit Raj@Amrit MINGW64 /e/sample (master)
+$ git remote add origin https://github.com/sample-code/test.git
+fatal: remote origin already exists.
